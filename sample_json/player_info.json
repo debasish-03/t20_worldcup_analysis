@@ -1,0 +1,177 @@
+{
+    "apikey": "86fd2ca3-5468-4475-8e07-3554a3b80188",
+    "data": {
+      "id": "6055cb49-9fbe-40b8-8d16-35dfb5fc1dcc",
+      "name": "Karim Haris",
+      "dateOfBirth": "2005-06-30T00:00:00",
+      "role": "Bowler",
+      "battingStyle": "Right Handed Bat",
+      "bowlingStyle": "Right-arm medium",
+      "placeOfBirth": "--",
+      "country": "Slovenia",
+      "playerImg": "https://h.cricapi.com/img/icon512.png",
+      "stats": [
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "m",
+          "value": "1"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "inn",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "no",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "runs",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "hs",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "avg",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "bf",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "sr",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "100s",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "200s",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "50s",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "4s",
+          "value": "-"
+        },
+        {
+          "fn": "batting",
+          "matchtype": "t20i",
+          "stat": "6s",
+          "value": "-"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "m",
+          "value": "1"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "inn",
+          "value": "1"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "b",
+          "value": "18"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "runs",
+          "value": "13"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "wkts",
+          "value": "0"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "bbi",
+          "value": "0/13"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "bbm",
+          "value": "0/13"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "econ",
+          "value": "4.33"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "avg",
+          "value": "0.0"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "sr",
+          "value": "0.0"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "5w",
+          "value": "0"
+        },
+        {
+          "fn": "bowling",
+          "matchtype": "t20i",
+          "stat": "10w",
+          "value": "0"
+        }
+      ]
+    },
+    "status": "success",
+    "info": {
+      "hitsToday": 75,
+      "hitsUsed": 1,
+      "hitsLimit": 100,
+      "credits": 0,
+      "server": 5,
+      "queryTime": 14.0689,
+      "s": 0,
+      "cache": 0
+    }
+  }

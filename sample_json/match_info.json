@@ -1,0 +1,60 @@
+{
+    "apikey": "86fd2ca3-5468-4475-8e07-3554a3b80188",
+    "data": {
+      "id": "410cc5ca-f577-48e8-ac1c-c240741ad3ea",
+      "name": "England Champions vs Australia Champions, 7th Match",
+      "matchType": "t20",
+      "status": "Australia Champions won by 6 wkts",
+      "venue": "Edgbaston, Birmingham",
+      "date": "2024-07-06",
+      "dateTimeGMT": "2024-07-06T11:30:00",
+      "teams": [
+        "England Champions",
+        "Australia Champions"
+      ],
+      "teamInfo": [
+        {
+          "name": "Australia Champions",
+          "img": "https://h.cricapi.com/img/icon512.png"
+        },
+        {
+          "name": "England Champions",
+          "img": "https://h.cricapi.com/img/icon512.png"
+        }
+      ],
+      "score": [
+        {
+          "r": 160,
+          "w": 9,
+          "o": 20,
+          "inning": "England Champions Inning 1"
+        },
+        {
+          "r": 162,
+          "w": 4,
+          "o": 14,
+          "inning": "Australia Champions Inning 1"
+        }
+      ],
+      "tossWinner": "Australia Champions",
+      "tossChoice": "bowl",
+      "matchWinner": "Australia Champions",
+      "series_id": "d13235de-1bd4-4e5e-87e8-766c21f11661",
+      "fantasyEnabled": true,
+      "bbbEnabled": true,
+      "hasSquad": true,
+      "matchStarted": true,
+      "matchEnded": true
+    },
+    "status": "success",
+    "info": {
+      "hitsToday": 74,
+      "hitsUsed": 1,
+      "hitsLimit": 100,
+      "credits": 0,
+      "server": 2,
+      "queryTime": 13.5755,
+      "s": 0,
+      "cache": 0
+    }
+  }
