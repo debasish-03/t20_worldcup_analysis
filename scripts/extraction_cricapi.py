@@ -167,7 +167,7 @@ def player_info(id: str, offset: int = 0, api_key: str = API_KEY):
 if __name__ == '__main__':
     pass
 
-    # series_search_res = series_search(key='T20 Worl Cup')
+    # series_search_res = series_search(key='T20 World Cup')
     # logger.info(f'Series search: {series_search_res}')
 
     # series_info_res = series_info(id='d13235de-1bd4-4e5e-87e8-766c21f11661')
