@@ -1,0 +1,11 @@
+# config.yaml
+cricapi:
+  base_url: "https://api.cricapi.com/v1/"
+  api_key: ${CRICAPI_KEY}
+
+gcs:
+  bucket_name: ${GCS_BUCKET_NAME}
+
+bigquery:
+  dataset: ${BIGQUERY_DATASET}
+  project_id: ${PROJECT_ID}
