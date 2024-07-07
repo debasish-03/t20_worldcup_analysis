@@ -1,2 +1,7 @@
-pyspark
+# pyspark
+# python-dotenv
+apache-airflow-providers-google
+# pyarrow
+PyYAML
+requests
 python-dotenv

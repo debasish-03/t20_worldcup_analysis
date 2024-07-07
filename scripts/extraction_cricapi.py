@@ -23,7 +23,8 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-load_dotenv()
+# Load the .env file
+load_dotenv(dotenv_path='/opt/airflow/.env')
 
 
 # Load Configuration
@@ -31,7 +32,8 @@ config_path = os.path.join(os.path.dirname(__file__), '../configs/config.yaml')
 with open(config_path, 'r') as file:
     config = yaml.safe_load(file)
 
-API_KEY = os.getenv('CRICAPI_KEY')
+
+API_KEY = os.environ.get('CRICAPI_KEY')
 BASE_URL = config['cricapi']['base_url']
 
 
@@ -93,7 +95,7 @@ def series_info(id: str, offset: int = 0, api_key: str = API_KEY):
 
         response = requests.get(url=url, params=params)
         response.raise_for_status()
-        logger.info(f'Series data for id={id} fetched successfully. ')
+        logger.info(f'Series data for id={id} fetched successfully.')
         return response.json()
     except Exception as e:
         logger.error(f'Error fetching data for id={id} \n Error: {e}')
@@ -166,7 +168,6 @@ def player_info(id: str, offset: int = 0, api_key: str = API_KEY):
 
 if __name__ == '__main__':
     pass
-
     # series_search_res = series_search(key='T20 World Cup')
     # logger.info(f'Series search: {series_search_res}')
 
