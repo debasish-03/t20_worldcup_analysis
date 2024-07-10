@@ -1,0 +1,89 @@
+{
+    "types": [
+      {
+        "header": "Batting"
+      },
+      {
+        "value": "mostRuns",
+        "header": "Most Runs",
+        "category": "Batting"
+      },
+      {
+        "value": "highestScore",
+        "header": "Highest Scores",
+        "category": "Batting"
+      },
+      {
+        "value": "highestAvg",
+        "header": "Best Batting Average",
+        "category": "Batting"
+      },
+      {
+        "value": "highestSr",
+        "header": "Best Batting Strike Rate",
+        "category": "Batting"
+      },
+      {
+        "value": "mostHundreds",
+        "header": "Most Hundreds",
+        "category": "Batting"
+      },
+      {
+        "value": "mostFifties",
+        "header": "Most Fifties",
+        "category": "Batting"
+      },
+      {
+        "value": "mostFours",
+        "header": "Most Fours",
+        "category": "Batting"
+      },
+      {
+        "value": "mostSixes",
+        "header": "Most Sixes",
+        "category": "Batting"
+      },
+      {
+        "value": "mostNineties",
+        "header": "Most Nineties",
+        "category": "Batting"
+      },
+      {
+        "header": "Bowling"
+      },
+      {
+        "value": "mostWickets",
+        "header": "Most Wickets",
+        "category": "Bowling"
+      },
+      {
+        "value": "lowestAvg",
+        "header": "Best Bowling Average",
+        "category": "Bowling"
+      },
+      {
+        "value": "bestBowlingInnings",
+        "header": "Best Bowling ",
+        "category": "Bowling"
+      },
+      {
+        "value": "mostFiveWickets",
+        "header": "Most 5 Wickets Haul",
+        "category": "Bowling"
+      },
+      {
+        "value": "lowestEcon",
+        "header": "Best Economy",
+        "category": "Bowling"
+      },
+      {
+        "value": "lowestSr",
+        "header": "Best Bowling Strike Rate",
+        "category": "Bowling"
+      }
+    ],
+    "appIndex": {
+      "seoTitle": "ICC Mens T20 World Cup 2024 Statistics - Cricbuzz | Cricbuzz.com",
+      "webURL": "http://www.cricbuzz.com/cricket-series/7476/icc-mens-t20-world-cup-2024/stats"
+    }
+  }

@@ -35,6 +35,7 @@ RUN pip install --no-cache-dir pandas sqlalchemy psycopg2-binary
 
 # Copy the .env file
 COPY .env $AIRFLOW_HOME/.env
+COPY code $AIRFLOW_HOME/code
 
 SHELL ["/bin/bash", "-o", "pipefail", "-e", "-u", "-x", "-c"]
 

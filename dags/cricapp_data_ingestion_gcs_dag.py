@@ -1,19 +1,23 @@
+import sys
+sys.path.append('/opt/airflow/code/api_handler')
+sys.path.append('/opt/airflow/code/utils')
+
+from cricapp_api import CricApiHandler
+from file_utils import write_csv
+from gcp_utils import upload_to_gcs
+from cricapi_utils import flatten_series_info
+
 from airflow import DAG
 from datetime import datetime
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
 
-from google.cloud import storage
+# from code.api_handler.cricapp_api import series_info
+# from code.utils.file_utils import write_csv, flatten_series_info
+# from code.utils.gcp_utils import upload_to_gcs
 
 import sys
 import os
-import json
-
-# Add the scripts directory to the PYTHONPATH
-sys.path.append('/opt/airflow/scripts')
-
-from extraction_cricapi import series_info, match_info
-from utils import write_csv, flatten_series_info
 
 PROJECT_ID = os.environ.get('GCP_PROJECT_ID')
 BUCKET = os.environ.get('GCP_GCS_BUCKET')
@@ -21,22 +25,12 @@ BUCKET = os.environ.get('GCP_GCS_BUCKET')
 
 output_file = f'series_info.csv'
 
-def upload_to_gcs(bucket_name, local_file_name, destination_object_name):
-        print('bucket_name: ', bucket_name)
-        storage_client = storage.Client()
-        bucket = storage_client.bucket(bucket_name=bucket_name)
-
-        blob = bucket.blob(destination_object_name)
-        blob.upload_from_filename(local_file_name)
-
-        print(
-            f"File {local_file_name} uploaded to {destination_object_name}."
-        )
     
 def get_series_info():
-        series_info_data = series_info(id='d13235de-1bd4-4e5e-87e8-766c21f11661')
-        flatten_series_info_df = flatten_series_info(series_info_data)
-        write_csv(flatten_series_info_df, output_file)
+       cricapp = CricApiHandler()
+       series_info_data = cricapp.series_info(id='d13235de-1bd4-4e5e-87e8-766c21f11661')
+       flatten_series_info_df = flatten_series_info(series_info_data)
+       write_csv(flatten_series_info_df, output_file)
 
 # Define default arguments
 default_args = {

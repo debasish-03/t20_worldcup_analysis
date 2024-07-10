@@ -3,9 +3,9 @@ cricapi:
   base_url: "https://api.cricapi.com/v1/"
   api_key: ${CRICAPI_KEY}
 
-gcs:
-  bucket_name: ${GCS_BUCKET_NAME}
+cricbuzz:
+  base_url: "https://cricbuzz-cricket.p.rapidapi.com"
+  headers:
+    x-rapidapi-host: "cricbuzz-cricket.p.rapidapi.com"
+    x-rapidapi-key: "${CRICBUZZ_API_KEY}"
 
-bigquery:
-  dataset: ${BIGQUERY_DATASET}
-  project_id: ${PROJECT_ID}
